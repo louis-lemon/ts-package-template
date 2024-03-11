@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/louis-lemon/ts-package-template/compare/v1.0.1...v1.0.2) (2024-03-11)
+
+### Bug Fixes
+
+-   fix documentation for force deploy ([afecc21](https://github.com/louis-lemon/ts-package-template/commit/afecc21d06f512ebd1db71d85aeb6a9c7f2ed1d3))
+
 ## [1.0.1](https://github.com/louis-lemon/ts-package-template/compare/v1.0.0...v1.0.1) (2024-03-11)
 
 ### Bug Fixes

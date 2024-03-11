@@ -1,11 +1,11 @@
 <h1 align="center">ts-package-template</h1>
 
 <p align="center">
-  <a aria-label="last commit" href="https://github.com/tak-bro/ts-package-template/commits/main">
-    <img alt="" src="https://img.shields.io/github/last-commit/tak-bro/ts-package-template.svg">
+  <a aria-label="last commit" href="https://github.com/louis-lemon/ts-package-template/commits/main">
+    <img alt="" src="https://img.shields.io/github/last-commit/louis-lemon/ts-package-template.svg">
   </a>
-  <a aria-label="license" href="https://github.com/tak-bro/ts-package-template/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/tak-bro/ts-package-template.svg" alt="">
+  <a aria-label="license" href="https://github.com/louis-lemon/ts-package-template/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/louis-lemon/ts-package-template.svg" alt="">
   </a>
 </p>
 
@@ -21,7 +21,7 @@
 ### Installation
 
 ```bash
-$ git clone git@github.com:tak-bro/ts-package-template.git
+$ git clone git@github.com:louis-lemon/ts-package-template.git
 $ cd ts-package-template
 $ pnpm install && pnpm prepare
 ```
@@ -42,7 +42,7 @@ $ pnpm test
 
 Please follow this guidelines when reporting bugs and feature requests:
 
-1. Use [GitHub Issues](https://github.com/tak-bro/ts-package-template/issues) board to report bugs and feature requests (not our email address)
+1. Use [GitHub Issues](https://github.com/louis-lemon/ts-package-template/issues) board to report bugs and feature requests (not our email address)
 2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
 
 Thanks for understanding!
@@ -53,4 +53,4 @@ Thanks for understanding!
 
 ### License
 
-The MIT License (see the [LICENSE](https://github.com/tak-bro/ts-package-template/blob/main/LICENSE) file for the full text)
+The MIT License (see the [LICENSE](https://github.com/louis-lemon/ts-package-template/blob/main/LICENSE) file for the full text)

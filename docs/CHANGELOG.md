@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/louis-lemon/ts-package-template/compare/v1.0.0...v1.0.1) (2024-03-11)
+
+### Bug Fixes
+
+-   fix script ([e0152e6](https://github.com/louis-lemon/ts-package-template/commit/e0152e6f53988d761b5b46698ffb21c638914f5c))
+
 # 1.0.0 (2024-03-11)
 
 ### Features

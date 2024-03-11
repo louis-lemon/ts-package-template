@@ -14,12 +14,42 @@
         "start": "tsc -w",
         "test": "jest --passWithNoTests --updateSnapshot --watchAll",
         "test:coverage": "jest --passWithNoTests --updateSnapshot --coverage",
-        "build": "yarn clean && tsup src/index.ts",
-        "release": "yarn run build && changeset publish",
+        "build": "pnpm clean && tsup src/index.ts",
+        "my-release": "pnpm run build && npm deploy",
         "fix:prettier": "prettier \"src/**/*.ts\" --write",
-        "fix:lint": "eslint src --ext .ts --fix",
-        "changeset": "npx changeset",
-        "changeset:version": "npx changeset version"
+        "fix:lint": "eslint src --ext .ts --fix"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            [
+                "@semantic-release/changelog",
+                {
+                    "changelogFile": "docs/CHANGELOG.md"
+                }
+            ],
+            [
+                "@semantic-release/exec",
+                {
+                    "publishCmd": "pnpm my-release"
+                }
+            ],
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "docs/CHANGELOG.md",
+                        "package.json"
+                    ]
+                }
+            ],
+
+            "@semantic-release/github"
+        ]
     },
     "keywords": [
         "typescript",
@@ -30,9 +60,15 @@
     "author": "Hyungtak Jin",
     "license": "MIT",
     "devDependencies": {
-        "@changesets/cli": "^2.26.2",
         "@commitlint/cli": "^19.0.3",
         "@commitlint/config-conventional": "^19.0.3",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/commit-analyzer": "^11.1.0",
+        "@semantic-release/exec": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^9.2.6",
+        "@semantic-release/npm": "^11.0.3",
+        "@semantic-release/release-notes-generator": "^12.1.0",
         "@types/jest": "^29.5.11",
         "@types/node": "^20.9.0",
         "@typescript-eslint/eslint-plugin": "^6.2.0",

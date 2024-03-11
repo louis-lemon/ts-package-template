@@ -1,6 +1,6 @@
 {
     "name": "ts-package-template",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "description": "Typescript npm package template",
     "exports": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -14,8 +14,8 @@
         "start": "tsc -w",
         "test": "jest --passWithNoTests --updateSnapshot --watchAll",
         "test:coverage": "jest --passWithNoTests --updateSnapshot --coverage",
-        "build": "pnpm clean && tsup src/index.ts",
-        "release": "pnpm run build && changeset publish",
+        "build": "yarn clean && tsup src/index.ts",
+        "release": "yarn run build && changeset publish",
         "fix:prettier": "prettier \"src/**/*.ts\" --write",
         "fix:lint": "eslint src --ext .ts --fix",
         "changeset": "npx changeset",
@@ -31,6 +31,8 @@
     "license": "MIT",
     "devDependencies": {
         "@changesets/cli": "^2.26.2",
+        "@commitlint/cli": "^19.0.3",
+        "@commitlint/config-conventional": "^19.0.3",
         "@types/jest": "^29.5.11",
         "@types/node": "^20.9.0",
         "@typescript-eslint/eslint-plugin": "^6.2.0",

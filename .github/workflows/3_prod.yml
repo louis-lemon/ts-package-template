@@ -1,4 +1,4 @@
-name: Release
+name: deploy to prod
 on:
     push:
         branches:
@@ -31,8 +31,16 @@ jobs:
 
             - run: pnpm i
 
-            - name: Publish to pnpm
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: npx semantic-release
+            - name: Get Latest Version
+              id: get-version
+              run: |
+                  VERSION=$(node -p "require('./package.json').version")
+                  echo $VERSION
+                  echo "::set-output name=version::$VERSION"
+
+            - name: Deploy to prod
+              run: echo "TODO deploy to prod"
+
+            - name: Post to a Slack channel
+              id: post-slack
+              run: echo "TODO send message to slack"

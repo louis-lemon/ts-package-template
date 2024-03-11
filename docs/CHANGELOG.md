@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/louis-lemon/ts-package-template/compare/v1.0.4...v1.1.0) (2024-03-11)
+
+### Features
+
+-   add missing test specs for createAsyncDelay function ([56db6a4](https://github.com/louis-lemon/ts-package-template/commit/56db6a462e8a34f5c54831f946da9dcd4b77b139))
+-   **deployment:** add prod deployment job ([714e155](https://github.com/louis-lemon/ts-package-template/commit/714e1556cb5feeb7372caa78b67108671cd23fdb))
+
+# [1.1.0](https://github.com/louis-lemon/ts-package-template/compare/v1.0.4...v1.1.0) (2024-03-11)
+
+### Features
+
+-   **deployment:** add prod deployment job ([714e155](https://github.com/louis-lemon/ts-package-template/commit/714e1556cb5feeb7372caa78b67108671cd23fdb))
+
 ## [1.0.4](https://github.com/louis-lemon/ts-package-template/compare/v1.0.3...v1.0.4) (2024-03-11)
 
 ### Bug Fixes

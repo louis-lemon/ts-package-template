@@ -15,7 +15,7 @@
         "test": "jest --passWithNoTests --updateSnapshot --watchAll",
         "test:coverage": "jest --passWithNoTests --updateSnapshot --coverage",
         "build": "pnpm clean && tsup src/index.ts",
-        "my-release": "pnpm run build && npm deploy",
+        "my-release": "pnpm run build && npm publish",
         "fix:prettier": "prettier \"src/**/*.ts\" --write",
         "fix:lint": "eslint src --ext .ts --fix"
     },

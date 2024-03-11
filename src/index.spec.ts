@@ -1,6 +1,6 @@
 import { createAsyncDelay } from './index';
 
-describe('example', () => {
+describe('createAsyncDelay', () => {
     it('should return undefined ', async () => {
         const result = await createAsyncDelay(0);
         expect(result).toBeFalsy();

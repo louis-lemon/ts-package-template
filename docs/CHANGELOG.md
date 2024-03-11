@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/louis-lemon/ts-package-template/compare/v1.0.3...v1.0.4) (2024-03-11)
+
+### Bug Fixes
+
+-   fix project name for force deploy ([efce811](https://github.com/louis-lemon/ts-package-template/commit/efce811b1866e2d4fc6f44a2a07ef8457f73c3b6))
+
 ## [1.0.3](https://github.com/louis-lemon/ts-package-template/compare/v1.0.2...v1.0.3) (2024-03-11)
 
 ### Bug Fixes

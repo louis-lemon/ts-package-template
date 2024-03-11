@@ -1,7 +1,7 @@
 {
-    "name": "ts-package-template",
+    "name": "louis-lemon-ts-package-template",
     "version": "0.0.0",
-    "description": "Typescript npm package template",
+    "description": "Typescript npm package for semantic release test",
     "exports": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "type": "module",
